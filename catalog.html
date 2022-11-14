@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- CSS  -->
+    <link rel="stylesheet" href="assets/css/scroll.css" />
+    <link rel="stylesheet" href="assets/css/catalog.css" />
+    <link rel="stylesheet" href="assets/css/responsive.css" />
+
+    <!-- Link logo head -->
+    <link rel="shortcut icon" type="image" href="assets/img/icon_logo.png" />
+
+    <!-- Loading css -->
+    <link rel="stylesheet" href="assets/css/loader.css" />
+
+    <title>Catalog</title>
+  </head>
+  <body>
+    <!-- Pre-Loader Start -->
+    <div class="loader_bg">
+      <div class="loader"></div>
+    </div>
+    <!-- Pre-Loader End -->
+
+    <!-- Navbar Start -->
+    <nav>
+      <input type="checkbox" id="check" />
+      <label for="check">
+        <img src="assets/img/menu.png" id="btn" />
+        <img src="assets/img/close.png" id="cancel" />
+      </label>
+
+      <div class="logo">
+        <a href="index.html">
+          <img class="image_logo" src="assets/img/logo_icon.png" />
+          <h3 class="txt_logo">Techart</h3>
+        </a>
+      </div>
+
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="catalog.html">Catalog</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    <!-- Navbar End -->
+
+    <!-- Hero Start -->
+    <div class="container-hero">
+      <div class="hero-txt">
+        <h2>Prepare Yourself</h2>
+        <h4>To be a Programmer...</h4>
+        <p>Complete your equipment at this store</p>
+        <ul>
+          <li>Directly from the factory</li>
+          <li>One year warranty</li>
+          <li>Cheap price of special quality</li>
+        </ul>
+        <div class="catalog-btn">
+          <a href="#categories">
+            <p><span>Don't Miss Out</span></p>
+          </a>
+        </div>
+      </div>
+      <div class="hero-img">
+        <img src="assets/img/vr.png" class="hero-img" />
+      </div>
+    </div>
+    <!-- Hero End -->
+
+    <!-- Catalog Start -->
+    <div class="categories" id="categories">
+      <div class="main-categories">
+        <div class="judul-categories">
+          <h2>Our Categories</h2>
+        </div>
+        <div class="box-row-1">
+          <a href="categories/keyboard.html">
+            <div class="card card-1">
+              <div class="box">
+                <img src="assets/img/keyboard_1.png" class="img-keyboard" />
+                <h3 class="txt-card-keyboard">Keyboard</h3>
+              </div>
+            </div>
+          </a>
+          <a href="categories/mouse.html">
+            <div class="card card">
+              <div class="box">
+                <img src="assets/img/mouse_1.png" class="img-mouse" />
+                <h3 class="txt-card-mouse">Mouse</h3>
+              </div>
+            </div>
+          </a>
+          <a href="categories/headphone.html">
+            <div class="card card">
+              <div class="box">
+                <img src="assets/img/earphone.png" class="img-earphone" />
+                <h3 class="txt-card-earphone">Headphone</h3>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <div class="box-row-2">
+          <a href="categories/chairs.html">
+            <div class="card card-2">
+              <div class="box">
+                <img src="assets/img/kursi.png" class="img-chair" />
+                <h3 class="txt-card-chair">Gaming Chairs</h3>
+              </div>
+            </div>
+          </a>
+          <a href="categories/joystick.html">
+            <div class="card">
+              <div class="box">
+                <img src="assets/img/stick.png" class="img-joystick" />
+                <h3 class="txt-card-joystick">Joystick</h3>
+              </div>
+            </div>
+          </a>
+          <a href="categories/mousepad.html">
+            <div class="card">
+              <div class="box">
+                <img src="assets/img/mousepad.png" class="img-mousepad" />
+                <h3 class="txt-card-mousepad">Mousepad</h3>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+    <!-- Catalog End -->
+
+    <!-- ======= Main JS ======== -->
+    <script src="assets/js/loader.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script>
+      setTimeout(function () {
+        $(".loader_bg").fadeToggle();
+      }, 1000);
+    </script>
+  </body>
+</html>

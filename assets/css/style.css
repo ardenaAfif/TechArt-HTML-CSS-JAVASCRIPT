@@ -1,0 +1,360 @@
+@import url('https://allfont.net/allfont.css?fonts=caviar-dreams');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Caviar Dreams', arial;
+}
+
+html {
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+}
+
+/* === Nav Start === */
+nav {
+    height: 60px;
+    position: fixed;
+    width: 100%;
+    z-index: 999; 
+    background-color: #ffffff;
+    opacity: 1;
+    top: 0;
+    left: 0;
+    box-shadow: 0px 3px 9px rgba(0, 0, 0, 0.5);
+}
+
+nav .image_logo {
+    width: 50px;
+    position: absolute;
+    top: 4px;
+    left: 2%;
+}
+nav .logo .txt_logo {
+    position: absolute;
+    top: 11px;
+    left: 6%;
+    font-size: 30px;
+    color: rgb(0, 0, 0);
+}
+nav ul {
+    float: right;
+    margin-right: 30px;
+}
+nav ul li {
+    display: inline-block;
+    line-height: 60px;
+    margin: 0 15px;
+    font-weight: bold;
+}
+nav ul li a {
+    position: relative;
+    color: rgb(0, 0, 0);
+    font-size: 18px;
+    padding: 5px 0;
+}
+nav ul li a:before {
+    position: absolute;
+    content: '';
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    width: 100%;
+    background: rgb(0, 0, 0);
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform .4s linear;
+}
+nav ul li a:hover:before {
+    transform: scaleX(1);
+    transform-origin: left;
+}
+/*  === Nav End === */
+
+/* === Jumbotron Start === */
+.jumbotron-main {
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.jumbotron-main img{
+    display: block;
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+}
+
+.jumbotron-main h2{
+    text-align: center;
+    letter-spacing: 3px;
+    color: white;
+    position: absolute;
+    margin: 160px 0 100px 200px;
+    font-size: 80px;
+    text-shadow: 3px 5px rgba(0,0,0,0.6);
+}
+
+.jumbotron-main span{
+    color: #F56132;
+}
+
+.jumbotron-main button a{
+    font-family: viga;
+    font-size: 20px;
+    border-radius: 12px;
+    text-transform: uppercase;
+    height: 45px;
+    padding-top: 14px;
+    width: 130px;
+    position: absolute;
+    margin: 400px 550px;
+    background-color: #F56132;
+    border: none;
+    color: #fff;
+}
+.jumbotron-main button a:hover {
+    cursor: pointer;
+    color: #F56132;
+    transition: 0.3s;
+    background: #fff;
+}
+/* === Jumbotron end === */
+
+/* === panel start == */
+.panel{
+    position: absolute;
+    display: block;
+    margin-top: -80px;
+    margin-left: 19%;
+    border-radius: 20px;
+    background-color: white;
+    width: 60%;
+    height: 150px;
+    box-shadow:2px 4px 4px rgba(0,0,0,0.5);
+}
+
+.panel .col-1,
+.panel .col-2 
+{
+    padding: 25px 0 0 60px;
+    float: left;
+}
+
+.panel .col-1 img,
+.panel .col-2 img{
+    width: 100px;
+    float: left;
+    padding-right: 30px;
+}
+
+.panel .judul-2 {
+    padding-top: 12px;
+}
+.panel .judul-2 h3 {
+    padding-bottom: 7px;
+}
+/* === panel end == */
+
+/* === Categories Start === */
+.main-categories {
+    position: absolute;
+    display: block;
+    justify-content: space-around;
+    height: 100vh;
+}
+.judul-categories h2 {
+    text-shadow: 2px 2px rgba(0, 0, 0, 0.4);
+    position: relative;
+    margin: 110px 0 30px 500px;
+    align-items: center;
+    justify-content: center;
+    font-family: montserrat;
+    font-size: 2rem;
+}
+.main-categories .card {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    background: linear-gradient(45deg, #e6733e, rgb(194, 77, 77), #fd6f4c);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    float: left;
+    cursor: pointer;
+}
+.main-categories .card-1 {
+    margin-left: 250px;
+}
+.card img {
+    width: 180px;
+    position: relative;
+    padding-bottom: 20px;
+}
+.card .img-earphone {
+    width: 130px;
+    position: relative;
+    padding-top: 20px;
+}
+.card .img-mouse {
+    width: 130px;
+    position: relative;
+    padding-bottom: 20px;
+}
+.card .img-chair{
+    width: 130px;
+    position: relative;
+    padding-left: 20px;
+    padding-top: 30px;
+}
+.card .img-joystick{
+    width: 130px;
+    position: relative;
+    padding-left: 10px;
+    
+}
+.card .txt-card-joystick{
+    color: #fff;
+    padding-top: 15px;
+    padding-left: 30px;
+    letter-spacing: 2px;
+}
+.card .txt-card-chair{
+    color: #fff;
+    padding-left: 13px;
+    letter-spacing: 2px;
+    margin-top: 0;
+    padding-bottom: 50px;
+}
+.card .txt-card-mouse {
+    color: #fff;
+    padding-left: 34px;
+    letter-spacing: 2px;
+}
+.card .txt-card-earphone{
+    color: #fff;
+    padding: 0 0 30px 20px;
+    letter-spacing: 2px;
+}
+.card .txt-card-mousepad,
+.card .txt-card-keyboard {
+    color: #fff;
+    padding-left: 40px;
+    letter-spacing: 2px;
+}
+.main-categories .card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, .5);
+    transition: 0.4s;
+}
+.box-row-1 .card,
+.box-row-2 .card {
+    margin: 0 50px 30px 0;
+}
+.box-row-1 .card-1,
+.box-row-2 .card-2 {
+    margin-left: 280px;
+}
+/* === Categories End === */
+
+/* testimonial start */
+.header-testi{
+    font-family: 'Caviar Dreams', arial;
+    text-align: center;
+    color: rgb(0, 0, 0);
+    text-shadow: 2px 2px 2px rgb(0,0,0,0.5);
+    width: 25%;
+    margin: auto;
+    margin-top: 700px;
+    margin-bottom: 0;
+}
+
+.container-testi{
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 40px;
+    width: 70%;   
+    margin-top: 60px;
+    margin-left: 170px;
+    margin-bottom: 40px;
+    height: 350px;
+}
+
+img.musyafa, img.dika, img.dion{
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    margin-right: auto;
+    margin-left: auto;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.card-testi{
+    text-align: center;
+    padding: 1.5rem;
+    border-bottom-right-radius: 200px;
+    border-top-left-radius: 200px;
+}
+
+.card-testi-1{
+    box-shadow: 13px 13px 13px rgba(0, 0, 0, 0.5);
+    background: rgb(215,64,90);
+    background: linear-gradient(138deg, rgba(215,64,90,1) 5%, rgba(226,126,79,1) 31%, rgba(145,51,51,1) 100%);
+}
+.card-testi-2{
+    box-shadow: 13px 13px 13px rgba(0, 0, 0, 0.5);
+    background: rgb(215,64,90);
+    background: linear-gradient(138deg, rgba(215,64,90,1) 5%, rgba(226,126,79,1) 31%, rgba(145,51,51,1) 100%);
+}
+.card-testi-3{
+    box-shadow: 13px 13px 13px rgba(0, 0, 0, 0.5);
+    background: rgb(215,64,90);
+    background: linear-gradient(138deg, rgba(215,64,90,1) 5%, rgba(226,126,79,1) 31%, rgba(145,51,51,1) 100%);
+}
+
+.card-testi-1 img{
+    border: 2px solid white;
+}
+.card-testi-2 img{
+    border: 2px solid white;
+}
+.card-testi-3 img{
+    border: 2px solid white;
+}
+
+.card-testi-1 i{
+    font-size: 10px;
+    margin-bottom: 10px;
+    color: white;
+}
+.card-testi-2 i{
+    font-size: 10px;
+    margin-bottom: 10px;
+    color: white;
+}
+.card-testi-3 i{
+    font-size: 10px;
+    margin-bottom: 10px;
+    color: white;
+}
+
+.name{
+    text-transform: uppercase;
+    font-weight: 800;
+    margin-top: 10px;
+}
+
+.job{
+    text-transform: uppercase;
+    opacity: 0.8;
+    font-size: 10px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+/* testimonial end */

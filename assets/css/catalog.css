@@ -1,0 +1,237 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+@import url('https://allfont.net/allfont.css?fonts=caviar-dreams');
+
+* {
+    font-family: 'Caviar Dreams', arial;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+html {
+    scroll-behavior: smooth;
+    overflow-y: scroll;
+}
+/* === Nav Start === */
+nav {
+    height: 60px;
+    position: fixed;
+    width: 100%;
+    z-index: 999; 
+    background-color: #ffffff;
+    opacity: 1;
+    top: 0;
+    left: 0;
+    box-shadow: 0px 3px 9px rgba(0, 0, 0, 0.5);
+}
+
+nav .image_logo {
+    width: 50px;
+    position: absolute;
+    top: 4px;
+    left: 2%;
+}
+nav .logo .txt_logo {
+    position: absolute;
+    top: 11px;
+    left: 6%;
+    font-size: 30px;
+    color: rgb(0, 0, 0);
+}
+nav ul {
+    float: right;
+    margin-right: 30px;
+}
+nav ul li {
+    display: inline-block;
+    line-height: 60px;
+    margin: 0 15px;
+    font-weight: bold;
+}
+nav ul li a {
+    position: relative;
+    color: rgb(0, 0, 0);
+    font-size: 18px;
+    padding: 5px 0;
+}
+nav ul li a:before {
+    position: absolute;
+    content: '';
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    width: 100%;
+    background: rgb(0, 0, 0);
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform .4s linear;
+}
+nav ul li a:hover:before {
+    transform: scaleX(1);
+    transform-origin: left;
+}
+/*  === Nav End === */
+
+/* Hero Start */
+.container-hero {
+    height: 100vh;
+    background: rgb(231,231,231);
+    background: linear-gradient(180deg, rgba(231,231,231,1) 0%, rgba(200,200,204,1) 21%, rgba(255,142,71,1) 51%, #cf5c15 93%); 
+}
+.container-hero .hero-txt {
+    float: left;
+    display: block;
+    margin: 190px 0 0 150px;
+}
+
+.hero-txt h2 {
+    font-size: 50px;
+    font-family: 'Montserrat', sans-serif;
+}
+.hero-txt h4 {
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+.hero-txt p {
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+.hero-txt ul {
+    padding: 0 0 30px 20px;
+    font-size: 20px;
+}
+.catalog-btn a {
+    position: absolute;
+    width: 180px;
+    border-radius: 10px;
+    height: 50px;
+    background: rgb(255,176,15);
+    background: rgb(165,159,159);
+    background: linear-gradient(325deg, rgba(165,159,159,1) 0%, rgba(124,120,120,1) 44%, rgba(82,80,80,1) 69%, rgba(29,29,29,1) 100%); 
+    color: #000;
+    cursor: pointer;
+    transition: 0.4s;
+}
+.catalog-btn a:hover {
+    background: rgb(255,176,15);
+    background: rgb(165,159,159);
+    background: linear-gradient(115deg, rgba(165,159,159,1) 0%, rgba(75,75,75,1) 26%, rgba(61,61,61,1) 45%, rgba(29,29,29,1) 87%); 
+    color: #ffffff;
+}
+.hero-txt span {
+    position: absolute;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    padding: 15px 0 0 20px;
+}
+.hero-img {
+    float: right;
+    margin-top: 68.5px;
+    margin-right: 90px;
+    width: 500px;
+}
+
+/* Hero End */
+
+/* Catalog Start */
+.main-categories {
+    position: absolute;
+    display: block;
+    justify-content: space-around;
+    height: 100vh;
+}
+.judul-categories h2 {
+    text-shadow: 2px 2px rgba(0, 0, 0, 0.4);
+    position: relative;
+    margin: 75px 0 30px 500px;
+    align-items: center;
+    justify-content: center;
+    font-family: montserrat;
+    font-size: 2rem;
+}
+.main-categories .card {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    background: linear-gradient(45deg, #e6733e, rgb(194, 77, 77), #fd6f4c);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    float: left;
+    cursor: pointer;
+}
+.main-categories .card-1 {
+    margin-left: 300px;
+}
+.card img {
+    width: 180px;
+    position: relative;
+    padding-bottom: 20px;
+}
+.card .img-earphone {
+    width: 130px;
+    position: relative;
+    padding-top: 20px;
+}
+.card .img-mouse {
+    width: 130px;
+    position: relative;
+    padding-bottom: 20px;
+}
+.card .img-chair{
+    width: 130px;
+    position: relative;
+    padding-left: 20px;
+    padding-top: 30px;
+}
+.card .img-joystick{
+    width: 130px;
+    position: relative;
+    padding-left: 10px;
+    
+}
+.card .txt-card-joystick{
+    color: #fff;
+    padding-top: 15px;
+    padding-left: 30px;
+    letter-spacing: 2px;
+}
+.card .txt-card-chair{
+    color: #fff;
+    padding-left: 13px;
+    letter-spacing: 2px;
+    margin-top: 0;
+    padding-bottom: 50px;
+}
+.card .txt-card-mouse {
+    color: #fff;
+    padding-left: 34px;
+    letter-spacing: 2px;
+}
+.card .txt-card-earphone{
+    color: #fff;
+    padding: 0 0 30px 20px;
+    letter-spacing: 2px;
+}
+.card .txt-card-mousepad,
+.card .txt-card-keyboard {
+    color: #fff;
+    padding-left: 40px;
+    letter-spacing: 2px;
+}
+.main-categories .card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, .5);
+    transition: 0.4s;
+}
+.box-row-1 .card,
+.box-row-2 .card {
+    margin: 0 50px 30px 0;
+}
+.box-row-1 .card-1,
+.box-row-2 .card-2 {
+    margin-left: 280px;
+}
+/* === Categories End === */
+/* Catalog End */

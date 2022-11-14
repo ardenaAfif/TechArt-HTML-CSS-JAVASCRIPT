@@ -1,0 +1,247 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+@import url('https://allfont.net/allfont.css?fonts=caviar-dreams');
+
+* {
+    font-family: 'Caviar Dreams', arial;
+    text-decoration: none;
+    padding: 0;
+    margin: 0;
+}
+html {
+    scroll-behavior: smooth;
+    overflow-y: scroll;
+}
+/* === Nav Start === */
+nav {
+    height: 60px;
+    position: fixed;
+    width: 100%;
+    z-index: 999; 
+    background-color: #ffffff;
+    opacity: 1;
+    top: 0;
+    left: 0;
+    box-shadow: 0px 3px 9px rgba(0, 0, 0, 0.5);
+}
+
+nav .image_logo {
+    width: 50px;
+    position: absolute;
+    top: 4px;
+    left: 2%;
+}
+nav .logo .txt_logo {
+    position: absolute;
+    top: 11px;
+    left: 6%;
+    font-size: 30px;
+    color: rgb(0, 0, 0);
+}
+nav ul {
+    float: right;
+    margin-right: 30px;
+}
+nav ul li {
+    display: inline-block;
+    line-height: 60px;
+    margin: 0 15px;
+    font-weight: bold;
+}
+nav ul li a {
+    position: relative;
+    color: rgb(0, 0, 0);
+    font-size: 18px;
+    padding: 5px 0;
+}
+nav ul li a:before {
+    position: absolute;
+    content: '';
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    width: 100%;
+    background: rgb(0, 0, 0);
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform .4s linear;
+}
+nav ul li a:hover:before {
+    transform: scaleX(1);
+    transform-origin: left;
+}
+/*  === Nav End === */
+
+/* keyboard categories */
+.container-keyboard-1,
+.container-keyboard-2,
+.container-keyboard-3,
+.container-keyboard-4 {
+    position: relative;
+    display: block;
+    max-width: 1200px;
+    flex-wrap: wrap;
+    z-index: 1;
+    font-family: 'Poppins', sans-serif;
+}
+.container-keyboard-1 h2.judul-1 {
+    font-size: 35px;
+    padding: 90px 0 0 450px;
+    text-shadow: 3px 3px rgba(0, 0, 0, 0.3);
+}
+.container-keyboard-1 p.kata-1{
+    text-align: center;
+    padding-left: 80px;
+    font-size: 1em;
+    font-weight: bold;
+}
+.container-keyboard-1 .card-keyboard-1,
+.container-keyboard-1 .card-keyboard-2,
+.container-keyboard-1 .card-keyboard-3,
+.container-keyboard-2 .card-keyboard-1,
+.container-keyboard-2 .card-keyboard-2,
+.container-keyboard-2 .card-keyboard-3,
+.container-keyboard-3 .card-keyboard-1,
+.container-keyboard-3 .card-keyboard-2,
+.container-keyboard-3 .card-keyboard-3,
+.container-keyboard-4 .card-keyboard-1,
+.container-keyboard-4 .card-keyboard-2,
+.container-keyboard-4 .card-keyboard-3 {
+    position: relative;
+    float: left;
+    width: 280px;
+    height: 400px;
+    margin: 30px;
+    box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+    border-radius: 15px;
+    background: rgb(215,64,90);
+    background: linear-gradient(138deg, rgba(215,64,90,1) 5%, rgba(226,126,79,1) 31%, rgba(145,51,51,1) 100%);
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center ;
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    border-left: 1px solid rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(5px);
+}
+.container-keyboard-1 .card-keyboard-universal,
+.container-keyboard-2 .card-keyboard-universal,
+.container-keyboard-3 .card-keyboard-universal,
+.container-keyboard-4 .card-keyboard-universal {
+    margin-left: 150px;
+}
+.container-keyboard-1 .card-keyboard-1 .content-keyboard-1,
+.container-keyboard-1 .card-keyboard-2 .content-keyboard-2,
+.container-keyboard-1 .card-keyboard-3 .content-keyboard-3,
+.container-keyboard-2 .card-keyboard-1 .content-keyboard-1,
+.container-keyboard-2 .card-keyboard-2 .content-keyboard-2,
+.container-keyboard-2 .card-keyboard-3 .content-keyboard-3,
+.container-keyboard-3 .card-keyboard-1 .content-keyboard-1,
+.container-keyboard-3 .card-keyboard-2 .content-keyboard-2,
+.container-keyboard-3 .card-keyboard-3 .content-keyboard-3,
+.container-keyboard-4 .card-keyboard-1 .content-keyboard-1,
+.container-keyboard-4 .card-keyboard-2 .content-keyboard-2,
+.container-keyboard-4 .card-keyboard-3 .content-keyboard-3 {
+    padding: 20px;
+    text-align: center;
+}
+.container-keyboard-1 .card-keyboard-1 .content-keyboard-1 h3,
+.container-keyboard-1 .card-keyboard-2 .content-keyboard-2 h3,
+.container-keyboard-1 .card-keyboard-3 .content-keyboard-3 h3,
+.container-keyboard-2 .card-keyboard-1 .content-keyboard-1 h3,
+.container-keyboard-2 .card-keyboard-2 .content-keyboard-2 h3,
+.container-keyboard-2 .card-keyboard-3 .content-keyboard-3 h3,
+.container-keyboard-3 .card-keyboard-1 .content-keyboard-1 h3,
+.container-keyboard-3 .card-keyboard-2 .content-keyboard-2 h3,
+.container-keyboard-3 .card-keyboard-3 .content-keyboard-3 h3,
+.container-keyboard-4 .card-keyboard-1 .content-keyboard-1 h3,
+.container-keyboard-4 .card-keyboard-2 .content-keyboard-2 h3,
+.container-keyboard-4 .card-keyboard-3 .content-keyboard-3 h3 {
+    font-size: 1.7em;
+    color: #fff;
+    z-index: 1;
+}
+.container-keyboard-1 .card-keyboard-3 .content-keyboard-3 h3 {
+    font-size: 1.5em;
+    z-index: 1;
+}
+.container-keyboard-1 .card-keyboard-1 .content-keyboard-1 p,
+.container-keyboard-1 .card-keyboard-2 .content-keyboard-2 p,
+.container-keyboard-1 .card-keyboard-3 .content-keyboard-3 p,
+.container-keyboard-2 .card-keyboard-1 .content-keyboard-1 p,
+.container-keyboard-2 .card-keyboard-2 .content-keyboard-2 p,
+.container-keyboard-2 .card-keyboard-3 .content-keyboard-3 p,
+.container-keyboard-3 .card-keyboard-1 .content-keyboard-1 p,
+.container-keyboard-3 .card-keyboard-2 .content-keyboard-2 p,
+.container-keyboard-3 .card-keyboard-3 .content-keyboard-3 p,
+.container-keyboard-4 .card-keyboard-1 .content-keyboard-1 p,
+.container-keyboard-4 .card-keyboard-2 .content-keyboard-2 p,
+.container-keyboard-4 .card-keyboard-3 .content-keyboard-3 p {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+/* keyboard images 1 */
+.container-keyboard-1 .content-keyboard-1 .img-keyboard-1{
+    width: 250px;
+    padding-bottom: 20px;
+}
+.container-keyboard-1 .content-keyboard-2 .img-keyboard-2{
+    width: 250px;
+}
+.container-keyboard-1 .content-keyboard-3 .img-keyboard-3{
+    width: 250px;
+}
+
+/* keyboard images 2 */
+.container-keyboard-2 .content-keyboard-1 .img-keyboard-4{
+    width: 250px;
+    padding-bottom: 20px;
+}
+.container-keyboard-2 .content-keyboard-2 .img-keyboard-5{
+    width: 250px;
+    padding-bottom: 25px;
+}
+.container-keyboard-2 .content-keyboard-3 .img-keyboard-6{
+    width: 250px;
+    padding-bottom: 60px;
+}
+
+/* keyboard images 3 */
+.container-keyboard-3 .content-keyboard-1 .img-keyboard-7{
+    width: 250px;
+    padding-bottom: 50px;
+}
+.container-keyboard-3 .content-keyboard-2 .img-keyboard-8{
+    width: 250px;
+}
+.container-keyboard-3 .content-keyboard-3 .img-keyboard-9{
+    width: 250px;
+}
+.container-keyboard-3 .card-keyboard-2 .content-keyboard-2 h3{
+    font-size: 1.3em;
+}  
+.container-keyboard-3 .card-keyboard-3 .content-keyboard-3 h3{
+    font-size: 1.3em;
+} 
+/* keyboard images 4 */
+.container-keyboard-4 .content-keyboard-1 .img-keyboard-10{
+    width: 250px;
+    margin-bottom: 40px;
+}
+.container-keyboard-4 .content-keyboard-2 .img-keyboard-11{
+    width: 200px;
+    margin-bottom: -20px;
+}
+.container-keyboard-4 .content-keyboard-3 .img-keyboard-12{
+    width: 250px;
+    margin-bottom: 50px;
+}
+.container-keyboard-4 .card-keyboard-1 .content-keyboard-1 h3{
+    font-size: 1.3em;
+}  
+.container-keyboard-4 .card-keyboard-2 .content-keyboard-2 h3{
+    font-size: 1.3em;
+} 
+
+
